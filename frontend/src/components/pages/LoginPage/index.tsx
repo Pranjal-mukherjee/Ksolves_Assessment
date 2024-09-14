@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import { TextField, Button, Container, Typography, Box } from '@mui/material';
 import './index.css'; // Optional CSS for custom styles
 import { emailRegex } from '../../utils/constants';
+import { submitUserForm } from '../../services/UserService';
+import { useNavigate } from 'react-router-dom';
 
-interface FormState {
+export interface FormState {
   name: string;
   email: string;
   password: string;
 }
 
 const Login = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState<FormState>({
     name: '',
     email: '',
@@ -34,7 +37,8 @@ const Login = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    submitUserForm(formData);
+    navigate("/home")
   };
 
   return (

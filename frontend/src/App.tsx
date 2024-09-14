@@ -1,16 +1,20 @@
 import React from 'react';
 import Login from './components/pages/LoginPage';
-import EventRegistrationForm from './components/Cards/EventForm';
+
 import HomePage from './components/pages/HomePage';
-import EventCard from './components/Cards/EventInvitationCard';
-import NotificationCard from './components/Cards/NotificationCard';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (<>
-      {/* <EventCard eventDate='12-06-2024' eventTime='7:00PM' senderEmail='pranal' eventName='kfjaebnfkj'/> */}
-      <HomePage/>
-  </>
-
+    
+ <BrowserRouter>
+ <Routes>
+  <Route path="/home" element={<HomePage/>}/>
+  <Route path="/" element={<Login/>}/>
+</Routes>
+  </BrowserRouter>
+</>
   );
 }
 
