@@ -1,0 +1,51 @@
+/* Styling for the Home Page */
+
+.home-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Bar Styling */
+.header-bar {
+  background-color: skyblue;
+  box-shadow: none;
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 40px;
+}
+
+/* Tab Styling */
+.tab-container {
+  margin-top: 20px;
+}
+
+.custom-tabs {
+  background-color: purple;
+  color: white;
+}
+
+.custom-tab {
+  text-transform: none;
+}
+
+.tab-content {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

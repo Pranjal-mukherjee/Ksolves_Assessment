@@ -1,0 +1,56 @@
+.notification-modal {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    margin-top: 10vh;
+  }
+  
+  .modal-box {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position the close icon */
+  }
+  
+  .modal-header {
+    font-weight: bold;
+    margin-bottom: 80px;
+    text-align: left;
+  }
+  
+  .notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .notification-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  /* Styling for the Close Icon */
+  .close-icon {
+    position: absolute;
+    color: red;
+    left: 370px;
+  }
+  
+  /* Button to open the modal */
+  .open-modal-btn {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .open-modal-btn:hover {
+    background-color: #1565c0;
+  }
+  
