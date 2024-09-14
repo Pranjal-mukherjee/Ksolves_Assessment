@@ -11,7 +11,7 @@ Below is an example of how you can instruct your audience on installing and sett
 
 
 Clone the repo
-git clone https://github.com/github_username/repo_name.git
+git clone (https://github.com/Pranjal-mukherjee/Ksolves_Assessment)
 Install NPM packages
 npm install
 
